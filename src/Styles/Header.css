@@ -1,0 +1,74 @@
+::root {
+    --base-color: rgba(23, 18, 20, 1);
+    --text-color: rgba(255, 255, 255, 1);
+    --main-color: rgba(234, 16, 121, 1);
+    --info-color: rgba(210, 203, 203, 1);
+}
+
+.logo {
+    color:  rgba(234, 16, 121, 1);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link-nav {
+    color:  rgba(234, 16, 121, 1);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.link-nav::hover {
+    color:  rgba(212, 147, 178, 0.8);
+}
+
+.wpp {
+    background-color:  rgb(10, 255, 55);
+    border: none;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 0;
+    text-decoration: none;
+    
+}
+
+.wpp:hover {
+    background-color:  rgb(10, 255, 55, 0.8);
+}
+.no-hover:hover {
+    color:  rgba(234, 16, 121, 0.542);
+    text-decoration: none;
+}
+
+
+
+.custom-toggler .navbar-toggler-icon {
+    background-color: transparent; /* Torna o fundo transparente */
+    border: none; /* Remove qualquer borda padrão */
+  }
+  
+  .custom-toggler .navbar-toggler-icon::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #ff5733; /* Cor das barras */
+    position: absolute;
+    top: 7px;
+    left: 0;
+  }
+  
+  .custom-toggler .navbar-toggler-icon::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #c5300f; /* Cor das barras */
+    position: absolute;
+    top: 14px;
+    left: 0;
+  }
+  

@@ -1,0 +1,49 @@
+.box-title {
+    width: 40%;
+    height: 50%;
+    margin-top: 300px;
+    margin-left: 100px;
+}
+
+
+
+p {
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px 50px 50px 0px;
+    text-indent: 1rem;
+}
+
+h1 {
+    color: white;
+    font-size: 64px;
+    text-wrap: wrap;
+    font-weight: 700;
+
+}
+
+img {
+    position: relative;
+    left: 400px;
+}
+
+@media (max-width: 575.98px) {
+    /* Estilos para telas com largura menor que 576px */
+    body {
+      font-size: 14px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      position: relative;
+      bottom: 20px;
+      left: 20px;
+    }
+    .container {
+      padding: 0 15px;
+    }
+  }
+  
+
