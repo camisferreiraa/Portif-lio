@@ -1,8 +1,13 @@
 .box-title {
-    width: 40%;
-    height: 50%;
-    margin-top: 300px;
-    margin-left: 100px;
+padding: 1rem;
+margin-top: 20rem;
+background: rgba(255, 255, 255, 0.31);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.5px);
+-webkit-backdrop-filter: blur(6.5px);
+border: 1px solid rgba(255, 255, 255, 0.73);
+
 }
 
 
@@ -17,33 +22,17 @@ p {
 }
 
 h1 {
-    color: white;
+    color: rgb(255, 8, 148);
     font-size: 64px;
     text-wrap: wrap;
     font-weight: 700;
 
 }
 
-img {
-    position: relative;
-    left: 400px;
-}
 
-@media (max-width: 575.98px) {
-    /* Estilos para telas com largura menor que 576px */
-    body {
-      font-size: 14px;
-    }
-    img {
-      width: 100%;
-      height: auto;
-      position: relative;
-      bottom: 20px;
-      left: 20px;
-    }
-    .container {
-      padding: 0 15px;
-    }
-  }
+
+
+
+
   
 
