@@ -97,4 +97,11 @@
   .offcanvas.hide {
     transform: translateX(100%);
   }
+
+  @media (min-width: 766px) {
+    .x {
+      display: none;
+    }
+  }
+  
   

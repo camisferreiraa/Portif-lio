@@ -3,12 +3,13 @@ import styled from "styled-components"
 import { FaProjectDiagram } from "react-icons/fa";
 import { FaSmileWink } from "react-icons/fa";
 import { FaUserCog } from "react-icons/fa";
+import '../Styles/InferiorBar.css'
 
 
 const Menu = styled.div `  
  width: 100vw;
  height: 80px;
- background-color: rgba(234, 16, 121, 1);
+ background-color: #cc1f73;
  display: flex;
  justify-content: space-around;
  align-items: center;
@@ -49,7 +50,7 @@ function MenuInferior() {
                 textDecoration: 'none',
                 fontSize: '20px',
                 fontWeight: '600', 
-            }} to="/projects" className="nav-link d-flex align-items-center" activeClassName="active"><FaProjectDiagram className="me-2" size={30}/>Projetos</NavLink>
+            }} to="/projects" className="link nav-link d-flex align-items-center" activeClassName="active"><FaProjectDiagram className="me-2" size={30}/>Projetos</NavLink>
             </Div>
         </Menu>
       </>

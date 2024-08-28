@@ -61,7 +61,7 @@ function Header() {
 
             <div ref={menuRef} className={`offcanvas ${isMenuOpen ? 'show' : 'hide'}`} id="navbarNav">
             <button type="button" className="close " aria-label="Close" onClick={() => setIsMenuOpen(false)}>
-            <span aria-hidden="true"><IoClose/></span>
+            <span aria-hidden="true" className='x'><IoClose/></span>
             </button>
                 <ul className="navbar-nav " style={{paddingLeft: '16px'}}>
                     <li className="nav-item">

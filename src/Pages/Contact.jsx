@@ -17,6 +17,7 @@ const Container = styled.div `
  width: 100vw;
  height: 100%;
  
+ 
  `
 const Div = styled.div `
 display: flex;
@@ -27,6 +28,7 @@ gap: 1rem;
 padding: 2rem ;
 width: 100vw;
 height: 100%;
+overflow: hidden;
 `
 
 function Contact() {

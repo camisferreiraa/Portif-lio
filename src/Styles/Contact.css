@@ -7,7 +7,7 @@
     to { opacity: 1; }
   }
   * {
-    
+    overflow: hidden;
   }
 
 h1 {
