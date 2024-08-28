@@ -6,8 +6,12 @@ import { DiCss3 } from "react-icons/di";
 import { DiJavascript } from "react-icons/di";
 import { TbBrandReact } from "react-icons/tb";
 import { FaBootstrap } from "react-icons/fa";
-import AOS from 'aos'; 
-import { useEffect } from 'react';
+import { FaNode } from "react-icons/fa";
+import { GrMysql } from "react-icons/gr";
+import { FaJava } from "react-icons/fa6";
+import { SiMongodb } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+
 
 import '../Styles/Skills.css'
 
@@ -38,12 +42,14 @@ color: white;
 font-size: 24px;
 padding-left: 2rem;
 
+@media screen {
+  width: 90%;
+}
+
 `
 
 function Skills() {
-  useEffect(() => {
-    AOS.init({ duration: 1000 }); // Inicializa o AOS com a duração padrão de 1000ms
-  }, []);
+  
 
     return (
       <>
@@ -77,7 +83,7 @@ function Skills() {
               </BoxText>
             </section>
 
-            <section className='front-end'>
+            <section className='front-end' style={{flexDirection: 'column-reverse'}}>
             <BoxText>
             Como desenvolvedora back-end, meu foco é criar a base sólida que garante o bom funcionamento de aplicações robustas e escaláveis. Com experiência em Java, JavaScript, Node.js, Spring, SQL e MongoDB, desenvolvo sistemas que suportam alto tráfego e desempenho consistente, garantindo que as operações sejam realizadas de forma rápida e segura.
 
@@ -86,18 +92,17 @@ function Skills() {
               <div className='front' data-aos="fade-up">
                 <ul>
                   <li>Node.js</li>
-                  <li>Express</li>
+                  <li>Java</li>
                   <li>MySQL</li>
                   <li>MongoDB</li>
-                  <li>GraphQL</li>
-                  <li>REST</li>
+                  <li>TypeScript</li>
                 </ul>
                 <div>
-                  <DiHtml5 size={40}/>
-                  <DiCss3  size={40} />
-                  <DiJavascript size={40} />
-                  <TbBrandReact size={40} />
-                  <FaBootstrap size={40} />
+                  <FaNode size={40}/>
+                  <FaJava  size={40} />
+                  <GrMysql size={40} />
+                  <SiMongodb size={40} />
+                  <SiTypescript size={40} />
                 </div>
               </div>
             </section>

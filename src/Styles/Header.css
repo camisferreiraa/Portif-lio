@@ -18,8 +18,11 @@
     font-weight: 600;
 }
 
-.link-nav::hover {
-    color:  rgba(212, 147, 178, 0.8);
+.link-nav:hover {
+    color:  rgba(212, 147, 178, 0.623);
+}
+.link-nav:visited {
+    color:  rgba(255, 5, 142, 0.8) !important;
 }
 
 .wpp {
@@ -70,5 +73,28 @@
     position: absolute;
     top: 14px;
     left: 0;
+  }
+
+
+  .offcanvas {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1045;
+    height: 100%;
+    max-width: 300px;
+    width: 100%;
+    background-color: #161515;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+  }
+  
+  .offcanvas.show {
+    transform: translateX(0);
+  }
+  
+  .offcanvas.hide {
+    transform: translateX(100%);
   }
   

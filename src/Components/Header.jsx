@@ -5,6 +5,8 @@ import { IoMdContact } from "react-icons/io";
 import { MdDesignServices } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
 import '../Styles/Header.css'
+import { useState, useEffect, useRef } from 'react';
+import { IoClose } from "react-icons/io5";
 
 const Container = styled.div `
 z-index: 1000;
@@ -22,6 +24,23 @@ height: 80px;
 `
 
 function Header() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const menuRef = useRef(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+          if (menuRef.current && !menuRef.current.contains(event.target)) {
+            setIsMenuOpen(false);
+          }
+        };
+    
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => document.removeEventListener('mousedown', handleClickOutside);
+      }, []);
+    
+      const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+      };
 
     const whatsappNumber = "5599985273497"; 
     const message = "Olá, gostaria de mais informações!"; 
@@ -36,11 +55,15 @@ function Header() {
         </div>
 
         <nav className="navbar navbar-expand-md ml-auto">
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button onClick={toggleMenu} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav ms-auto">
+
+            <div ref={menuRef} className={`offcanvas ${isMenuOpen ? 'show' : 'hide'}`} id="navbarNav">
+            <button type="button" className="close " aria-label="Close" onClick={() => setIsMenuOpen(false)}>
+            <span aria-hidden="true"><IoClose/></span>
+            </button>
+                <ul className="navbar-nav " style={{paddingLeft: '16px'}}>
                     <li className="nav-item">
                         <NavLink to='/services' className="nav-link link-nav d-flex align-items-center no-hover">Serviços<MdDesignServices className='ms-1' size={25}/></NavLink>
                     </li>

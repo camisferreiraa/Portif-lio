@@ -4,6 +4,7 @@ import Header from '../Components/Header'
 import projectOne from '../Assets/Projects/projectOne.png';
 import projectTwo from '../Assets/Projects/ProjectTwo.png';
 import projectThree from '../Assets/Projects/ProjectThree.png'
+import projectFour from '../Assets/Projects/ProjectFour.png'
 import { FaGithub } from "react-icons/fa6";
 import { IoEyeSharp } from "react-icons/io5";
 
@@ -72,14 +73,14 @@ function Projects() {
 
       <div className="row align-items-center project">
         <div className="col-md-4">
-          <img src={projectOne} alt="" className='img-fluid image'/>
+          <img src={projectFour} alt="" className='img-fluid image'/>
         </div>
         <div className="col-md-6">
           <H2>Clone Netflix</H2>
           <Paragrafo>Projeto do curso +PraTi, usando HTML, CSS, REACT</Paragrafo>
           <div>
-            <Button><a className='btn' href="https://vanessa-nails.vercel.app/" target='_blank'><IoEyeSharp size={30} className='me-2'/>Deploy</a></Button>
-            <Button><a className='btn' href="https://github.com/camisferreiraa/Vanessa-Nails.git" target='_blank'><FaGithub className='me-2' size={30}/>Ver Código</a></Button>
+            <Button><a className='btn' href="https://netflix-three-ruddy.vercel.app/" target='_blank'><IoEyeSharp size={30} className='me-2'/>Deploy</a></Button>
+            <Button><a className='btn' href="https://github.com/camisferreiraa/Netflix.git" target='_blank'><FaGithub className='me-2' size={30}/>Ver Código</a></Button>
           </div>
         </div>
       </div>

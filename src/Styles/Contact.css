@@ -6,3 +6,82 @@
     from { opacity: 0; }
     to { opacity: 1; }
   }
+  * {
+    
+  }
+
+h1 {
+  font-size: 46px;
+}
+.media-socias {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem;
+  border: 1px solid white;
+  border-radius: 8px;
+  width: 70%;
+  justify-content: center;
+  box-shadow: 0 0 53px -21px rgba(255, 255, 255, 0.7);
+}
+
+h2 > a {
+  text-decoration: none;
+  color: white;
+}
+
+h2 > a:hover {
+  color: rgba(255, 255, 255, 0.616);
+}
+h2 > a:active {
+  color: rgba(236, 2, 154, 0.616);
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input {
+  padding: 1rem;
+  border-radius: 26px;
+  background: transparent;
+  width: 600px;
+  border: 1px solid white;
+  color: white;
+
+}
+
+input::placeholder {
+  color: white;
+  letter-spacing: 1px;
+  padding-left: 1rem;
+}
+
+textarea {
+  padding: 1rem;
+  border-radius: 26px;
+  background: transparent;
+  width: 600px;
+  border: 1px solid white;
+  resize: none;
+  color: white;
+}
+textarea::placeholder {
+  color: white;
+  letter-spacing: 1px;
+  padding-left: 1rem;
+}
+button[type="submit"] {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #ff0088;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
