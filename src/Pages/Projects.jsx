@@ -28,6 +28,7 @@ const Container = styled.div `
  `
 const H2 = styled.h2`
 color: white;
+overflow: hidden;
 
 
 `
