@@ -18,6 +18,7 @@ display: flex;
 flex-direction: row;
 justify-content: space-around;
 align-items: center;
+overflow: hidden;
 
 width: 100vW;
 height: 80px;
@@ -60,8 +61,8 @@ function Header() {
             </button>
 
             <div ref={menuRef} className={`offcanvas ${isMenuOpen ? 'show' : 'hide'}`} id="navbarNav">
-            <button type="button" className="close " aria-label="Close" onClick={() => setIsMenuOpen(false)}>
-            <span aria-hidden="true" className='x'><IoClose/></span>
+            <button  type="button" className="close x" aria-label="Close" onClick={() => setIsMenuOpen(false)}>
+            <span aria-hidden="true" ><IoClose/></span>
             </button>
                 <ul className="navbar-nav " style={{paddingLeft: '16px'}}>
                     <li className="nav-item">
@@ -72,7 +73,7 @@ function Header() {
                     </li>
                     <a href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`} target="_blank"
                      rel="noopener noreferrer" className='wpp d-flex align-items-center'>
-                    WhatsApp <IoLogoWhatsapp size={25} className='ms-1'/>  
+                    WhatsApp <IoLogoWhatsapp size={35} className='ms-1'/>  
                     </a>
                 </ul>
                 

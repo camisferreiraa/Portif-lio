@@ -1,13 +1,6 @@
 .box-title {
 padding: 1rem;
 margin-top: 20rem;
-background: rgba(255, 255, 255, 0.31);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(6.5px);
--webkit-backdrop-filter: blur(6.5px);
-border: 1px solid rgba(255, 255, 255, 0.73);
-
 }
 
 
@@ -21,13 +14,29 @@ p {
     text-indent: 1rem;
 }
 
-h1 {
-    color: rgb(255, 8, 148);
-    font-size: 64px;
+.box-title h1 {
+    color: rgb(255, 255, 255);
+    font-size: 44px;
     text-wrap: wrap;
     font-weight: 700;
 
 }
+img {
+    width: 450px;
+    left: 300px;
+    top: 230px;
+    position: fixed
+}
+
+
+@media (max-width: 766px) {
+    img {
+        left: 100px;
+    }
+    .box-title {
+        margin-top: 1rem;
+    }
+  }
 
 
 

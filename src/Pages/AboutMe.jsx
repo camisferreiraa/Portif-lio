@@ -25,8 +25,8 @@ function AboutMe() {
       <>
       <Header/>
       <Container className="fade-in container-fluid">
-      <h1 className='fs-1 fs-md-6'>Me Conheça</h1>
-      <img src={eu} alt="" />
+      <h1  className='fs-1 fs-md-6'>Me Conheça</h1>
+      <img src={eu} alt="" style={{position: 'inherit'}} />
       <div className='texts'>
         <p>Olá, eu sou a Camilly, uma entusiasta da tecnologia com 20 anos e uma paixão inabalável por criar experiências digitais impactantes. Há um ano, mergulhei de cabeça no mundo do desenvolvimento e desde então, não consegui parar. Estou cursando Análise e Desenvolvimento de Sistemas, e cada linha de código que escrevo só reforça meu amor pelo front-end.
 

@@ -83,7 +83,7 @@ function Skills() {
               </BoxText>
             </section>
 
-            <section className='front-end' style={{flexDirection: 'column-reverse'}}>
+            <section className='back-end'>
             <BoxText>
             Como desenvolvedora back-end, meu foco é criar a base sólida que garante o bom funcionamento de aplicações robustas e escaláveis. Com experiência em Java, JavaScript, Node.js, Spring, SQL e MongoDB, desenvolvo sistemas que suportam alto tráfego e desempenho consistente, garantindo que as operações sejam realizadas de forma rápida e segura.
 

@@ -32,25 +32,25 @@ function MenuInferior() {
             <NavLink style={{
                 color: 'black',
                 textDecoration: 'none',
-                fontSize: '20px',
+                fontSize: '14px',
                 fontWeight: '600', 
-            }} to="/skills" className="nav-link d-flex align-items-center " activeClassName="active"><FaUserCog className="me-2" size={30}/>Habilidades</NavLink>
+            }} to="/skills" className="nav-link d-flex align-items-center " activeClassName="active"><FaUserCog className="me-2" size={20}/>Habilidades</NavLink>
             </Div>
             <Div>
             <NavLink style={{
                 color: 'black',
                 textDecoration: 'none',
-                fontSize: '20px',
+                fontSize: '14px',
                 fontWeight: '600', 
-            }} to="/aboutme" className="nav-link d-flex align-items-center " activeClassName="active"><FaSmileWink className="me-2" size={30}/>Sobre Mim</NavLink>
+            }} to="/aboutme" className="nav-link d-flex align-items-center " activeClassName="active"><FaSmileWink className="me-2" size={20}/>Sobre Mim</NavLink>
             </Div>
             <Div>
             <NavLink style={{
                 color: 'black',
                 textDecoration: 'none',
-                fontSize: '20px',
+                fontSize: '14px',
                 fontWeight: '600', 
-            }} to="/projects" className="link nav-link d-flex align-items-center" activeClassName="active"><FaProjectDiagram className="me-2" size={30}/>Projetos</NavLink>
+            }} to="/projects" className="link nav-link d-flex align-items-center" activeClassName="active"><FaProjectDiagram className="me-2" size={20}/>Projetos</NavLink>
             </Div>
         </Menu>
       </>

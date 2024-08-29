@@ -16,6 +16,7 @@ const Container = styled.div `
  background-color: #181016;
  width: 100vw;
  height: 100%;
+  ;
  
  
  `
@@ -25,10 +26,19 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 gap: 1rem;
-padding: 2rem ;
+padding: 1rem ;
 width: 100vw;
 height: 100%;
-overflow: hidden;
+`
+const Div2 = styled.div `
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 1rem;
+padding-bottom: 6rem;
+width: 100vw;
+height: 100%;
 `
 
 function Contact() {
@@ -97,7 +107,7 @@ function Contact() {
             </div>
           </div>
         </Div>
-        <Div style={{paddingBottom: '150px'}}>
+        <Div2>
           <h1>Mande sua mensagem</h1>
           <form onSubmit={handleSubmit} className="form-standard">
             <input type="text" placeholder="Seu nome"
@@ -124,7 +134,7 @@ function Contact() {
             />
             <button type="submit">Enviar</button>
           </form>
-        </Div>
+        </Div2>
         </Container>
       <MenuInferior/>
       </>

@@ -23,21 +23,18 @@ height: 100vh;
 `
 const Box = styled.div `
 display: flex;
+flex-direction: row;
+justify-content: center;
+width: 100%;
 
-@media (max-width: 768px) {
-   flex-direction: column-reverse;
-   justify-content: center;
-   align-items: center;
-   padding: 4rem;
-  }
+
 
 `
 const Div = styled.div `
 height: 300px;
-width: 700px;
+width: 400px;
 position: relative;
-left: 400px;
-top: px;
+left: 200px;
 
 @media (max-width: 768px) {
    left: 10px;
@@ -53,7 +50,7 @@ function Home() {
       <Header/>
       <Container className="container1">
         <Box>
-          <img src={person} style={{width: '750px', left: '200px', top: '180px', position: 'fixed'}}/>
+          <img src={person}/>
           <Div className="box-title">
             <h1>Seja Bem-Vindo ao meu portifolio</h1>
             <p>Sou Camilly, Desenvolvedora Web e Designer de Interfaces</p>

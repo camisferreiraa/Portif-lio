@@ -7,11 +7,12 @@
     to { opacity: 1; }
   }
   * {
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
 h1 {
-  font-size: 46px;
+  font-size: 20px;
+  overflow: hidden;
 }
 .media-socias {
   display: flex;
@@ -20,7 +21,7 @@ h1 {
   padding: 2rem;
   border: 1px solid white;
   border-radius: 8px;
-  width: 70%;
+  width: 600px;
   justify-content: center;
   box-shadow: 0 0 53px -21px rgba(255, 255, 255, 0.7);
 }
@@ -28,6 +29,7 @@ h1 {
 h2 > a {
   text-decoration: none;
   color: white;
+  font-size: 18px;
 }
 
 h2 > a:hover {
@@ -84,4 +86,28 @@ button[type="submit"] {
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+@media (max-width: 766px) {
+  .media-socias {
+    width: 400px;
+    
+  }
+  
+  form {
+    align-items: center;
+  }
+  input {
+    width: 400px;
+    padding: 0.5rem;
+  }
+  input::placeholder{
+    font-size: 14px;
+  }
+  textarea{
+    width: 400px;
+  }
+  textarea::placeholder{
+    font-size: 14px;
+  }
 }
