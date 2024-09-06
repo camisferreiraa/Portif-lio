@@ -13,12 +13,9 @@ import emailjs from 'emailjs-com'
 
 
 const Container = styled.div `
- background-color: #181016;
+ background-color: #1e1d1e;
  width: 100vw;
- height: 100%;
-  ;
- 
- 
+ height: 100vh;
  `
 const Div = styled.div `
 display: flex;
@@ -28,7 +25,7 @@ justify-content: center;
 gap: 1rem;
 padding: 1rem ;
 width: 100vw;
-height: 100%;
+
 `
 const Div2 = styled.div `
 display: flex;
@@ -37,8 +34,11 @@ align-items: center;
 justify-content: center;
 gap: 1rem;
 padding-bottom: 6rem;
-width: 100vw;
-height: 100%;
+
+
+@media (max-width: 766px) {
+  
+}
 `
 
 function Contact() {

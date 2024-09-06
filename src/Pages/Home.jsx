@@ -16,7 +16,7 @@ background-repeat: no-repeat;
 width: 100vw;
 display: flex;
 gap: 4rem;
-overflow-x: hidden;
+overflow: hidden;
 justify-content: center;
 height: 100vh;
 
